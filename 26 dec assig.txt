@@ -1,0 +1,143 @@
+user input -> int
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value of a");
+        int a =sc.nextInt();
+        System.out.println("the value of a is" +a);
+    }
+
+}
+
+--------------------------------------------------------------
+
+user input -> float
+
+
+import java.util.Scanner;
+
+public class Main {
+    public  static void main (String[] args){
+        Scanner sc  = new Scanner (System.in);
+        System.out.println("enter the value of a is");
+        
+       float a = sc.nextFloat();
+        
+        System.out.println("the value of a is :" +a);
+}
+}
+-----------------------------------------
+
+user input -> character
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the Character ");
+        
+        char a =sc.next().charAt(0);
+        System.out.println("the character is :" +a);
+    }
+}
+
+-----------------------------------------------------------
+uaer input -> long
+
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value ");
+        
+        long a =sc.nextLong();
+        System.out.println("the value is :" +a);
+    }
+}
+
+----------------------------------------------------------------
+uaer input -> double
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value ");
+        
+        double a =sc.nextDouble();
+        System.out.println("the value is :" +a);
+    }
+}
+
+-----------------------------------------------------------
+
+uaer input -> short
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value ");
+        
+        short a =sc.nextShort();
+        System.out.println("the value is :" +a);
+    }
+}
+
+
+------------------------------------------------------
+
+
+uaer input -> byte
+
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value ");
+        
+        byte a =sc.nextByte();
+        System.out.println("the value is :" +a);
+    }
+}
+
+-----------------------------------------------------------------
+
+uaer input -> boolean
+
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value ");
+        
+        boolean a =sc.nextBoolean();
+        System.out.println("the value is :" +a);
+    }
+}

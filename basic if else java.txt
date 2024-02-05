@@ -1,0 +1,428 @@
+voter id -> user input
+
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the value");
+        int a = sc.nextInt();
+        
+        if(a>18){
+            System.out.println("valid for vote");
+        }
+        else{
+            System.out.println("not valid for vote");
+        }
+        
+    }
+    
+}
+-----------------------------------------------------
+
+two number max-
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        if(a>b){
+            System.out.println("a is max");
+
+        }
+        else{
+            System.out.println("b is max");
+        }
+    }
+}
+
+--------------------------------
+
+one number is max
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        int b = 10;
+
+        if(a>10){
+            System.out.println("a is max");
+
+        }
+        else{
+            System.out.println("invalid choice");
+        }
+    }
+}
+
+---------------------------------------------------
+
+yhree number max -
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b and c");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        if(a>b && a>c){
+            System.out.println("a is max");
+
+        }
+        else if(b>a && b>c){
+            System.out.println("b is max");
+        }
+
+        else if (c>a && c>b){
+            System.out.println("c is max");
+        }
+    }
+}
+
+
+---------------------------------------------
+
+
+five nuber is max---
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b and c");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+         int d = sc.nextInt();
+          int e = sc.nextInt();
+
+        if(a>b && a>c && a>d && a>e){
+            System.out.println("a is max");
+
+        }
+        else if(b>a && b>c && b>d && b>e){
+            System.out.println("b is max");
+        }
+
+        else if (c>a && c>b && c>d && c>e){
+            System.out.println("c is max");
+        }
+
+         else if (d>a && d>b && d>c && d>e){
+            System.out.println("d is max");
+        }
+
+         else if (e>a && e>b && e>c && e>d){
+            System.out.println("e is max");
+        }
+    }
+}
+------------------------------------
+ user 
+-9 negative integer 
+5 positive integer 
+0 =zero --
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a and b and c");
+        int a = sc.nextInt();
+        
+       
+
+        if(a<0){
+            System.out.println("negative integer");
+
+        }
+        else if(a>0){
+            System.out.println("possitive integer");
+        }
+
+        else if(a==0){
+            System.out.println("Zero");
+        }
+
+       
+    }
+}
+
+-----------------------------
+
+vowel && consonant
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        char a = sc.next().charAt(0) ;
+        
+       
+
+        if(a=='a' || a=='e'|| a=='i'|| a=='o' || a=='u'){
+            System.out.println("vowel");
+
+        }
+        // else if(a>0){
+        //     System.out.println("possitive integer");
+        // }
+
+        else {
+            System.out.println("consonant");
+        }
+
+       
+    }
+}
+
+------------------------------------
+
+male && female
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of character");
+        char a = sc.next().charAt(0);
+        
+
+        if(a=='m'){
+            System.out.println("male");
+
+        }
+        
+        else if(a=='f'){
+          System.out.println("female");
+        }
+        else{
+            System.out.println("other");
+        }
+    }
+}
+
+----------------------------------------------------
+number 
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        
+
+        if(a==1){
+            System.out.println("sunday");
+
+        }
+        
+        else if(a==2){
+          System.out.println("monday");
+        }
+        else if (a==3){
+            System.out.println("tuesday");
+        }
+        else{
+            
+            System.out.println("invalid");
+            
+            
+        }
+    }
+}
+
+----------------------------------------------
+odd && even
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        
+
+        if(a%2==0){
+            System.out.println("odd number");
+
+        }
+        
+        
+        else{
+            
+            System.out.println("even number");
+            
+            
+        }
+    }
+}
+
+------------------------------------------------
+
+5 and 11 say divisble
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of num");
+        int num = sc.nextInt();
+        
+
+        if(num%5==0 && num%11==0){
+            System.out.println("number devisible both");
+
+        }
+        
+        else{
+            
+            System.out.println("not devisible");
+            
+            
+        }
+    }
+}
+
+------------------------------
+5 and 11 ek say devisble
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of num");
+        int num = sc.nextInt();
+        
+
+        if(num%5==0 || num%11==0){
+            System.out.println("number devisible ");
+
+        }
+        
+        else{
+            
+            System.out.println("not devisible");
+            
+            
+        }
+    }
+}
+
+---------------------------------
+lower case and upper case
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of character");
+        char a = sc.next().charAt(0);
+        
+
+        if(a>='A' && a<='Z'){
+            System.out.println("upper case ");
+
+        }
+        
+        else if(a>='a' && a<='z'){
+            
+            System.out.println("lower case");
+            
+        }
+        else{
+            System.out.println("not valid");
+        }
+    }
+}
+
+
+--------------------------------------------------
+if the inpute is the integer then check ,check number 7 or 3 k multiple se divisible hey kya
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of num");
+        int a = sc.nextInt();
+        
+
+        if(a%7*3==0){
+            System.out.println("it is devisible ");
+
+        }
+        
+       
+        else{
+            System.out.println("not devisible");
+        }
+    }
+}
+
+
+---------------------------------------------
+swap number
+
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a and b");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println(+a+" "+b);
+    }
+}

@@ -1,0 +1,281 @@
+1)Main constructor :multiplication 
+
+class A{
+    A (){
+        int a=1,b=5;
+        System.out.println(a*b);
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        A obj =new A();
+        
+    }
+}
+---------------------------------------------
+
+2)
+A class 
+constructor :addition
+
+class A{
+    A (){
+        int a=1,b=5;
+        System.out.println(a+b);
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        A obj =new A();
+        
+    }
+}
+--------------------------------------------------------- 
+
+B class 
+constructor :sub
+
+class B{
+    B (){
+        int a=10,b=5;
+        System.out.println(a-b);
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        B obj =new B();
+        
+    }
+}
+----------------------------------
+
+C Class 
+constructor :multi
+
+class C{
+    C (){
+        int a=10,b=5;
+        System.out.println(a*b);
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        C obj =new C();
+        
+    }
+}
+---------------------------------------
+
+Main class 
+constructor :div
+
+main method :access
+
+
+
+
+public class Main {
+    Main(){
+        int a=10,b=5;
+        System.out.println(a/b);
+    }
+    public static void main(String[] args) {
+
+        Main obj =new Main();
+        
+    }
+}
+
+--------------------------------------------   
+
+3) Main constructor :multiplication :parameterised constructor 
+user define
+
+import java.util.Scanner;
+
+public class Main {
+    Main(int a,int b){
+     System.out.print(a*b);
+    }
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in); 
+       System.out.println("enter the value of a and b ");
+       int a=sc.nextInt();
+       int b=sc.nextInt();
+       Main obj =new Main(a,b);
+    }
+}
+
+--------------------------------------------- 
+
+4)
+class A 
+constructor :default 
+show1 :add
+show2 :sub
+show3 :mul
+show4 :div 
+
+a)constant
+b)user input 
+
+// 4)
+// class A 
+// constructor :default 
+// show1 :add
+// show2 :sub
+// show3 :mul
+// show4 :div 
+
+// a)constant
+// b)user input 
+
+import java.util.Scanner;
+
+class A{
+    A(){
+        
+    }
+   void show1(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("enter the value of a and b ");
+       int a=sc.nextInt();
+       int b=sc.nextInt();
+       int c=a+b;
+       System.out.println(c + " ");
+    }
+    void show2(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a and b ");
+        int a=sc.nextInt();
+        int b =sc.nextInt();
+        int c= a-b;
+        System.out.println(c+ " ");
+    }
+
+    void show3(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a and b ");
+        int a=sc.nextInt();
+        int b =sc.nextInt();
+        int c= a*b;
+        System.out.println(c+ " ");
+    }
+
+    void show4(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a and b ");
+        int a=sc.nextInt();
+        int b =sc.nextInt();
+        int c= a/b;
+        System.out.println(c+ " ");
+    }
+}
+
+public class Main {
+    Main(int a,int b){
+     System.out.print(a*b);
+    }
+    public static void main(String[] args) {
+       A sc = new A();
+       sc.show1();
+       sc.show2();
+       sc.show3();
+       sc.show4();
+    }
+}
+
+------------------------------------------------
+
+5)
+A class 
+constructor  
+show1
+show2
+
+B class 
+constructor  
+show3
+show4
+
+Main class 
+constructor
+show5
+show6
+
+main() :access
+
+class A{
+   A(){
+    System.out.println("constructor");
+    
+   } 
+   void show1(){
+    System.out.println("show1");
+
+   }
+   void show2(){
+    System.out.println("show2");
+
+   }
+}
+class B{
+    B(){
+         System.out.println("constructor");
+    
+    } 
+    void show3(){
+        System.out.println("show3");
+ 
+    }
+    void show4(){
+        System.out.println("show4");
+    }
+
+}
+public class Main {
+   Main(){
+    
+    System.out.println("constructor");
+   }
+      
+   void show5(){
+    System.out.println("show5");
+
+   }
+   void show6(){
+    System.out.println("show6");
+
+   }
+    public static void main(String[] args) {
+        A sc=new A();
+        sc.show1();
+        sc.show2();
+        
+        B sc1=new B();
+        sc1.show3();
+        sc1.show4();
+
+        Main sc2=new Main();
+        sc2.show5();;
+        sc2.show6();
+
+      
+    }
+}

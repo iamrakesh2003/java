@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int a=sc.nextInt();
+        int i;
+        int count=0;
+        for(i=2;i<a;i++)
+        {
+            if(i%a==0)
+            {
+                count ++;
+            }
+        }
+        if(count==0)
+        {
+            System.out.println("prime ");
+        }
+        else
+        {
+            System.out.println("not prime ");
+        }
+    }
+}
+-------------------------------------------------
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number");
+        int num=sc.nextInt();
+        int m=num*num;
+        int sum=0;
+        int temp=num;
+        int rem;
+        while(m>0)
+        {
+            rem=m%10;
+            sum=sum+rem;
+            m=m/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("neon ");
+        }
+        else
+        {
+            System.out.println("not neon ");
+        }
+    }
+}

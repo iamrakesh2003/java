@@ -1,0 +1,560 @@
+1)1---->100
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+       int i = 1;
+
+       while(i<=100){
+        System.out.print(i+" ");
+        i++;
+       }
+         
+    }
+}
+
+------------------------------------------------------------------
+2)100--->1 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+       int i = 100;
+
+       while(i>=1){
+        System.out.print(i+" ");
+        i--;
+       }
+         
+    }
+}
+
+-----------------------------------------------------
+3)1---->100 even numbers print 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        int i=1;
+        while (i<=100) {
+            if (i%2==0) {
+                System.out.print(i+" ");
+                
+            }
+            i++;
+        }
+    }
+}
+-----------------------------------------
+4) 100--->1 even number 
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int i =100;
+        while (i>=1) {
+
+            if (i%2==0) {
+                System.out.print(i+ " ");
+                
+            }
+            i--;
+            
+        }
+    }
+}
+
+-----------------------------------------------
+5)1---->100 odd numbers
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int i =1;
+        while (i<=100) {
+
+            if (i%2!=0) {
+                System.out.print(i+ " ");
+                
+            }
+            i++;
+            
+        }
+    }
+}
+
+
+---------------------------------------------------
+
+6)50---->500 number print 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int i = 50;
+        while (i <= 500) {
+
+            System.out.print(i + " ");
+
+            i++;
+
+        }
+    }
+}
+-----------------------------------------
+7)500--->50 number print 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int i = 500;
+        while (i >= 50) {
+
+            System.out.print(i + " ");
+
+            i--;
+
+        }
+    }
+}
+------------------------------------------------
+8)50--->1000 even number 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int i = 50;
+        while (i <= 1000) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+
+            }
+
+            i++;
+
+        }
+    }
+}
+--------------------------------------------------
+9)user input 
+34-----67
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("enter the value of starting and ending:-" );
+        int starting = sc.nextInt();
+        int ending = sc.nextInt();
+
+        while (starting<=ending) {
+
+            System.out.print(starting+" ");
+            starting++;
+            
+        }
+
+
+
+    }
+}
+------------------------------------------------------
+10) random two 34-->67
+even number 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the value of starting and ending:-");
+        int starting = sc.nextInt();
+        int ending = sc.nextInt();
+
+        while (starting <= ending) {
+
+            if (starting % 2 == 0) {
+                System.out.print(starting + " ");
+
+            }
+
+            starting++;
+
+        }
+
+    }
+}
+-----------------------------------------
+11) random 
+oddd number
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the value of starting and ending:-");
+        int starting = sc.nextInt();
+        int ending = sc.nextInt();
+
+        while (starting <= ending) {
+
+            if (starting % 2 != 0) {
+                System.out.print(starting + " ");
+
+            }
+
+            starting++;
+
+        }
+
+    }
+} 
+---------------------------------------------
+12)1--->10 sum (addition) 
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+        int sum = 0;
+
+        while (i <= 10) {
+
+            sum = sum + i;
+             i++;
+
+        }
+        System.out.print(sum);
+       
+
+    }
+
+}
+
+-----------------------------------------------------------
+13)2 table print 
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int i = 1;
+        
+
+        while (i <= 10) {
+
+            System.out.print(i*2+" ");
+             i++;
+
+        }
+        
+       
+
+    }
+
+}
+
+------------------------------------------- 
+14)user input table 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("enter the value of num :-");
+        int num = sc.nextInt();
+        int i=1;
+
+        while (i<=10) {
+            System.out.println(i*num);
+
+            i++;
+        }
+
+
+
+    }
+}
+--------------------------------------------------
+15)2 3 4 5 6 7 8 9 10 table print (nested for)
+type2: 
+5 ----9 table 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("enter the value of num and num1:-");
+        int num = sc.nextInt();
+        int num1 = sc.nextInt();
+        int i = num;
+
+        while (i <= num1) {
+
+            int j = 1;
+            while (j <= 10) {
+                System.out.print(j * i + " ");
+                j++;
+
+            }
+            System.out.println();
+
+            i++;
+        }
+
+    }
+}
+-------------------------------------------------------
+16)1-->100 (7 and 3 k multiple se divisible ho)
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num = 1;
+
+        while (num <= 100)
+
+        {
+            if (num % 21 == 0) {
+                System.out.print(num + " ");
+            }
+
+            num++;
+        }
+
+    }
+}
+---------------------------------------------------
+17) divide number both 5 and 11 (1---->100)
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num = 1;
+
+        while (num <= 100)
+
+        {
+            if (num % 5 == 0 && num%7==0) {
+                System.out.print(num + " ");
+            }
+
+            num++;
+        }
+
+    }
+}
+
+--------------------------------------------------------
+18)100----1 (5 or 11) 
+public class Main {
+
+    public static void main(String[] args) {
+
+        int num = 100;
+
+        while (num >= 1)
+
+        {
+            if (num % 5 == 0 && num%7==0) {
+                System.out.print(num + " ");
+            }
+
+            num--;
+        }
+
+    }
+}
+
+----------------------------------
+19)2 table oppsite print 
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+
+        int num = 10;
+
+        while (num >= 1)
+
+        {
+           System.out.print(num*2+" ");
+            num--;
+        }
+
+    }
+}
+
+-------------------------------------------------
+20)100--->1 (n or m k multiple se divisible ho) 
+
+
+import java.util.Scanner;
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of N and M");
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        int i=100;
+        while(i>=1)
+        {
+            if(i%N==0 && i%M==0)
+            {
+                System.out.print(i);
+            }
+            
+            i--;
+        }
+        
+        
+
+        
+
+    }
+}
+
+-----------------------------------------------------
+21) 
+constant : 
+2 X 1 =2 
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+
+        int num = 1;
+
+        while (num <= 10)
+
+        {
+           System.out.println("2"+" X "+num+" = "+num*2);
+            num++;
+        }
+
+    }
+}
+
+
+user input : 
+9 X 1 = 9 
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+
+        int num = 1;
+
+        while (num <= 10)
+
+        {
+           System.out.println("9"+" X "+num+" = "+num*9);
+            num++;
+        }
+
+    }
+}
+
+
+-------------------------------------------------------------------------
+22)
+1--->100 even number sum 
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+
+        int i= 1;
+        int sum=0;
+        
+        while(i<=100)
+        {
+            
+            if(i%2==0)
+            {
+                sum=sum+i;
+                
+                
+            }
+            i++;
+        }
+           System.out.print(sum);
+       
+
+    }
+}
+
+------------------
+23)
+1---->100 odd number ka sum 
+
+public class Main 
+{
+
+    public static void main(String[] args) 
+    {
+
+        int i= 1;
+        int sum=0;
+        
+        while(i<=100)
+        {
+            
+            if(i%2!=0)
+            {
+                sum=sum+i;
+                
+                
+            }
+            i++;
+        }
+           System.out.print(sum);
+       
+
+    }
+}
