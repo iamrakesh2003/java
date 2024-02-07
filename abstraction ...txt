@@ -1,0 +1,1185 @@
+import java.util.Scanner;
+
+// class A :abstract type 
+// add() :abstract method :no return and no argument 
+// sub() :abstract method :no return and  argument 
+// div() :abstract method : return and no argument 
+// multi() :abstract method: return and  argument  
+// mod() :abstract method :return and no argument 
+// covariantreturntype method :abstract : return and no argument  
+
+// class B ex A
+
+// Main class
+// anonymous inner class 
+
+
+// user input 
+
+abstract class A{
+    abstract void add();
+    abstract void sub(int a,int b);
+    abstract int div();
+    abstract int multi(int a,int b);
+    abstract int mod();
+    
+
+}
+
+class B extends A{
+    void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+    }
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+
+    
+
+     int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+    }
+
+    int multi(int a, int b){
+        
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+    }
+
+     int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println("value of c "+c);
+        return c;
+        
+    }
+
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        B k=new B();
+        k.add();
+        k.sub(10, 020);
+        k.div();
+        k.multi(10, 20);
+        k.mod();
+
+        A o=new A() {
+            void add(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a+b;
+                System.out.println("value of c "+c);
+                
+            }
+            void sub(int a , int b){
+     
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+        
+             int div(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a/b;
+                System.out.println("value of c "+c);
+                return c;
+                
+            }
+        
+            int multi(int a, int b){
+                
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+            }
+        
+             int mod(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a%b;
+                System.out.println("value of c "+c);
+                return c;
+                
+            }
+           
+        };
+        o.add();
+        o.sub(10, 200);
+        o.div();
+        o.multi(10, 20);
+        o.mod();
+        
+    }
+}
+
+-------------------------------------------------
+
+import java.util.Scanner;
+
+abstract class A{
+    abstract void add();
+    abstract void sub(int a,int b);
+   
+}
+
+class B extends A{
+    void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+    }
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+}
+    class F extends A{
+
+        void add(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a+b;
+            System.out.println("value of c "+c);
+            
+        }
+    
+         void sub(int a , int b){
+         
+            int c=a-b;
+            System.out.println("value of c "+c);
+            
+            
+            
+        }
+
+    }
+
+    abstract class C{
+        abstract int div();
+        abstract int multi(int a, int b);
+    }
+
+       
+
+    class D extends C{
+        int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+
+        }
+
+        int multi (int a , int b){
+           
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+            
+        }
+
+    
+
+    }
+
+    
+    class G extends D{
+        int div(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a/b;
+            System.out.println("value of c "+c);
+            return c;
+            
+    
+            }
+    
+            int multi (int a , int b){
+               
+            int c=a*b;
+            System.out.println("value of c "+c);
+            return c;
+            
+                
+            }
+    
+
+    }
+
+    abstract class E{
+        abstract int mod();
+
+
+    }
+
+  
+
+
+
+public class Main extends E {
+    
+        int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        return c;
+
+        }
+
+    
+
+    public static void main(String[] args) {
+
+        B k=new B();
+        k.add();
+        k.sub(10, 20);
+
+        F o =new F();
+        o.add();
+        o.sub(10, 20);
+
+        D k1=new D();
+        k1.div();
+        k1.multi(10, 20);
+
+        G k2=new G();
+        k2.div();
+        k2.multi(10, 20);
+
+        Main k3 =new Main();
+        k3.mod();
+
+        A k4 =new A() {
+            void add(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a+b;
+                System.out.println("value of c "+c);
+                
+            }
+        
+             void sub(int a , int b){
+             
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+
+
+            
+        };
+
+        C k5=new C() {
+
+            int div(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a/b;
+                System.out.println("value of c "+c);
+                return c;
+                
+        
+                }
+        
+                int multi (int a , int b){
+                   
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+                    
+                }
+        
+            
+        };
+
+        E k6 =new E() {
+
+            int mod(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a%b;
+                return c;
+        
+                }
+            
+        };
+
+        
+  
+        
+    }
+}
+---------------------------------------------
+
+import java.util.Scanner;
+
+abstract class A{
+    abstract void add();
+    abstract void sub(int a,int b);
+   
+}
+
+class B extends A{
+    void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+    }
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+}
+    class F extends A{
+
+        void add(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a+b;
+            System.out.println("value of c "+c);
+            
+        }
+    
+         void sub(int a , int b){
+         
+            int c=a-b;
+            System.out.println("value of c "+c);
+            
+            
+            
+        }
+
+    }
+
+    abstract class C{
+        abstract int div();
+        abstract int multi(int a, int b);
+    }
+
+       
+
+    class D extends C{
+        int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+
+        }
+
+        int multi (int a , int b){
+           
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+            
+        }
+
+    
+
+    }
+
+    
+    class G extends D{
+        int div(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a/b;
+            System.out.println("value of c "+c);
+            return c;
+            
+    
+            }
+    
+            int multi (int a , int b){
+               
+            int c=a*b;
+            System.out.println("value of c "+c);
+            return c;
+            
+                
+            }
+    
+
+    }
+
+    abstract class E{
+        abstract int mod();
+
+
+    }
+
+  
+
+
+
+public class Main extends E {
+    
+        int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        return c;
+
+        }
+
+    
+
+    public static void main(String[] args) {
+
+        
+        A k4 =new A() {
+            void add(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a+b;
+                System.out.println("value of c "+c);
+                
+            }
+        
+             void sub(int a , int b){
+             
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+
+
+            
+        };
+
+        C k5=new C() {
+
+            int div(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a/b;
+                System.out.println("value of c "+c);
+                return c;
+                
+        
+                }
+        
+                int multi (int a , int b){
+                   
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+                    
+                }
+        
+            
+        };
+
+        E k6 =new E() {
+
+            int mod(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a%b;
+                return c;
+        
+                }
+            
+        };
+
+        
+  
+        
+    }
+}
+----------------------
+
+import java.util.*;
+
+// class A :abstract type 
+// add() :non method :no return and no argument 
+// sub() :abstract method :no return and  argument 
+// div() :non method : return and no argument 
+// multi() :abstract method: return and  argument  
+// mod() :non method :return and no argument 
+// covariantreturntype method : : return and no argument 
+// class B ex A
+
+// Main class
+// anonymous inner class 
+
+
+abstract class A{
+     void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+     }
+    abstract void sub(int a,int b);
+     int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+     }
+    abstract int multi(int a,int b);
+    int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        System.out.println("value of c "+c);
+        return c;
+    }
+    
+
+}
+
+class B extends A{
+   
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+
+
+    int multi(int a, int b){
+        
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+    }
+
+
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        B k=new B();
+        
+        k.sub(10, 020);
+        
+        k.multi(10, 20);
+      
+
+        A o=new A() {
+            
+            void sub(int a , int b){
+     
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+        
+             
+            int multi(int a, int b){
+                
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+            }
+        
+            
+           
+        };
+        o.add();
+        o.sub(10, 200);
+        o.div();
+        o.multi(10, 20);
+        o.mod();
+        
+    }
+}
+--------------------------------------------------
+
+import java.util.Scanner;
+
+abstract class A{
+    abstract void add();
+    abstract void sub(int a,int b);
+   
+}
+
+class B extends A{
+    void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+    }
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+}
+    class F extends A{
+
+        void add(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a+b;
+            System.out.println("value of c "+c);
+            
+        }
+    
+         void sub(int a , int b){
+         
+            int c=a-b;
+            System.out.println("value of c "+c);
+            
+            
+            
+        }
+
+    }
+
+    abstract class C{
+        abstract int div();
+        abstract int multi(int a, int b);
+    }
+
+       
+
+    class D extends C{
+        int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+
+        }
+
+        int multi (int a , int b){
+           
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+            
+        }
+
+    
+
+    }
+
+    
+    class G extends D{
+        int div(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a/b;
+            System.out.println("value of c "+c);
+            return c;
+            
+    
+            }
+    
+            int multi (int a , int b){
+               
+            int c=a*b;
+            System.out.println("value of c "+c);
+            return c;
+            
+                
+            }
+    
+
+    }
+
+    abstract class E{
+        abstract int mod();
+
+
+    }
+
+  
+
+
+
+public class Main extends E {
+    
+        int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        return c;
+
+        }
+
+    
+
+    public static void main(String[] args) {
+
+        
+        A k4 =new A() {
+            void add(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a+b;
+                System.out.println("value of c "+c);
+                
+            }
+        
+             void sub(int a , int b){
+             
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+
+
+            
+        };
+
+        C k5=new C() {
+
+            int div(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a/b;
+                System.out.println("value of c "+c);
+                return c;
+                
+        
+                }
+        
+                int multi (int a , int b){
+                   
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+                    
+                }
+        
+            
+        };
+
+        E k6 =new E() {
+
+            int mod(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a%b;
+                return c;
+        
+                }
+            
+        };
+
+        A k=new B();
+        k.add();
+        k.sub(10, 20);
+
+      A k1=new F();
+      k1.add();
+      k1.sub(10, 20);
+
+      C k2=new D();
+      k2.div();
+      k2.multi(10, 2);
+
+      C k3=new G();
+      k3.div();
+      k3.multi(10, 2);
+
+      E k9 =new Main();
+      k9.mod();
+
+        
+  
+        
+    }
+}
+
+-----------------------------------------------------
+
+import java.util.Scanner;
+
+abstract class A{
+    abstract void add();
+    abstract void sub(int a,int b);
+   
+}
+
+class B extends A{
+    void add(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("value of c "+c);
+        
+    }
+
+     void sub(int a , int b){
+     
+        int c=a-b;
+        System.out.println("value of c "+c);
+        
+        
+        
+    }
+}
+    class F extends A{
+
+        void add(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a+b;
+            System.out.println("value of c "+c);
+            
+        }
+    
+         void sub(int a , int b){
+         
+            int c=a-b;
+            System.out.println("value of c "+c);
+            
+            
+            
+        }
+
+    }
+
+    abstract class C{
+        abstract int div();
+        abstract int multi(int a, int b);
+    }
+
+       
+
+    class D extends C{
+        int div(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("value of c "+c);
+        return c;
+        
+
+        }
+
+        int multi (int a , int b){
+           
+        int c=a*b;
+        System.out.println("value of c "+c);
+        return c;
+        
+            
+        }
+
+    
+
+    }
+
+    
+    class G extends D{
+        int div(){
+            Scanner sc =new Scanner(System.in);
+            System.out.println("enter the value of a ");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b ");
+            int b=sc.nextInt();
+            int c=a/b;
+            System.out.println("value of c "+c);
+            return c;
+            
+    
+            }
+    
+            int multi (int a , int b){
+               
+            int c=a*b;
+            System.out.println("value of c "+c);
+            return c;
+            
+                
+            }
+    
+
+    }
+
+    abstract class E{
+        abstract int mod();
+
+
+    }
+
+  
+
+
+
+public class Main extends E {
+    
+        int mod(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b=sc.nextInt();
+        int c=a%b;
+        return c;
+
+        }
+
+    
+
+    public static void main(String[] args) {
+
+        
+        A k4 =new A() {
+            void add(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a+b;
+                System.out.println("value of c "+c);
+                
+            }
+        
+             void sub(int a , int b){
+             
+                int c=a-b;
+                System.out.println("value of c "+c);
+                
+                
+                
+            }
+
+
+            
+        };
+        k4.add();
+        k4.sub(10, 20);
+        C k5=new C() {
+
+            int div(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a/b;
+                System.out.println("value of c "+c);
+                return c;
+                
+        
+                }
+        
+                int multi (int a , int b){
+                   
+                int c=a*b;
+                System.out.println("value of c "+c);
+                return c;
+                
+                    
+                }
+        
+            
+        };
+        System.out.println(k5.div());
+        System.out.println(k5.multi(10, 2));
+
+        E k6 =new E() {
+
+            int mod(){
+                Scanner sc =new Scanner(System.in);
+                System.out.println("enter the value of a ");
+                int a=sc.nextInt();
+                System.out.println("enter the value of b ");
+                int b=sc.nextInt();
+                int c=a%b;
+                return c;
+        
+                }
+            
+        };
+          System.out.println(k6.mod());
+
+        
+  
+        
+    }
+}

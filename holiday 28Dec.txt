@@ -1,0 +1,423 @@
+1.Leap Year (in C):
+#include <stdio.h>
+
+int main() {
+    int year;
+
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d is a leap year.\n", year);
+    } else {
+        printf("%d is not a leap year.\n", year);
+    }
+
+    return 0;
+}
+
+
+--------------------------------------
+
+2. Temperature Conversion (in C):
+#include <stdio.h>
+
+int main() {
+    int choice;
+    double temperature, convertedTemperature;
+
+    printf("1. Celsius to Fahrenheit\n");
+    printf("2. Fahrenheit to Celsius\n");
+    printf("Enter choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        printf("Enter temperature in Celsius: ");
+        scanf("%lf", &temperature);
+        convertedTemperature = (temperature * 9 / 5) + 32;
+        printf("Temperature in Fahrenheit: %.2lf\n", convertedTemperature);
+    } else if (choice == 2) {
+        printf("Enter temperature in Fahrenheit: ");
+        scanf("%lf", &temperature);
+        convertedTemperature = (temperature - 32) * 5 / 9;
+        printf("Temperature in Celsius: %.2lf\n", convertedTemperature);
+    } else {
+        printf("Invalid choice\n");
+    }
+
+    return 0;
+}
+--------------------------------------
+3.Area and Volume:
+
+import java.util.Scanner;
+
+public class AreaCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter the shape (1 for triangle, 2 for square, 3 for rectangle):");
+        int shape = scanner.nextInt();
+        
+        if (shape == 1) {
+            System.out.println("Enter the base length of the triangle:");
+            double base = scanner.nextDouble();
+            
+            System.out.println("Enter the height of the triangle:");
+            double height = scanner.nextDouble();
+            
+            double area = 0.5 * base * height;
+            System.out.println("The area of the triangle is: " + area);
+        } else if (shape == 2) {
+            System.out.println("Enter the side length of the square:");
+            double side = scanner.nextDouble();
+            
+            double area = side * side;
+            System.out.println("The area of the square is: " + area);
+        } else if (shape == 3) {
+            System.out.println("Enter the length of the rectangle:");
+            double length = scanner.nextDouble();
+            
+            System.out.println("Enter the width of the rectangle:");
+            double width = scanner.nextDouble();
+            
+            double area = length * width;
+            System.out.println("The area of the rectangle is: " + area);
+        } else {
+            System.out.println("Invalid shape entered!");
+        }
+        
+        scanner.close();
+    }
+}
+
+--------------------------------------
+4.Check Alphabet:
+import java.util.Scanner;
+
+public class CheckAlphabet {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+            System.out.println(ch + " is an alphabet.");
+        } else {
+            System.out.println(ch + " This is a Digit.");
+        }
+    }
+}
+------------------------------------------------------
+5. Student Grading:
+
+#include <stdio.h>
+
+int main() {
+    int marks;
+    
+    printf("Enter student marks: ");
+    scanf("%d", &marks);
+
+    if (marks < 25) {
+        printf("Grade: F\n");
+    } else if (marks >= 25 && marks < 45) {
+        printf("Grade: E\n");
+    } else if (marks >= 45 && marks < 50) {
+        printf("Grade: D\n");
+    } else if (marks >= 50 && marks < 60) {
+        printf("Grade: C\n");
+    } else if (marks >= 60 && marks < 80) {
+        printf("Grade: B\n");
+    } else {
+        printf("Grade: A\n");
+    }
+
+    return 0;
+}
+
+--------------------------------------
+6.Categorize Height:
+ import java.util.Scanner;
+
+public class CategorizeHeight {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter height in centimeters: ");
+        double height = sc.nextDouble();
+
+        if (height < 150) {
+            System.out.println("Category: Low");
+        } else if (height >= 150 && height <= 180) {
+            System.out.println("Category: Mid");
+        } else {
+            System.out.println("Category: High");
+        }
+    }
+}
+--------------------------------------
+7.Student Details:
+import java.util.Scanner;
+
+public class StudentDetails {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Input the Roll Number of the student: ");
+        int rollNumber = sc.nextInt();
+        sc.nextLine(); 
+        System.out.print("Student Name: ");
+        String studentName = sc.nextLine();
+        System.out.print("Father's Name: ");
+        String fatherName = sc.nextLine();
+
+        
+        System.out.print("Input the marks of Physics, Chemistry, and Computer Application:");
+        int physicsMarks = sc.nextInt();
+        int chemistryMarks = sc.nextInt();
+        int computerApplicationMarks = sc.nextInt();
+
+       
+        int totalMarks = physicsMarks + chemistryMarks + computerApplicationMarks;
+        double percentage = (double) totalMarks / 3;
+        String division;
+
+        if (percentage >= 60) {
+            division = "First Division";
+        } else if (percentage >= 45) {
+            division = "Second Division";
+        } else if (percentage >= 33) {
+            division = "Third Division";
+        } else {
+            division = "Fail";
+        }
+
+       
+        System.out.println("Total: " + totalMarks);
+        System.out.println("Percentage: " + percentage + "%");
+        System.out.println("Division: " + division);
+    }
+}
+
+--------------------------------------
+8) Grade based on Average:
+
+
+import java.util.Scanner;
+
+public class GradeBasedOnAverage {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter five numbers: ");
+        double num1 = sc.nextDouble();
+        double num2 = sc.nextDouble();
+        double num3 = sc.nextDouble();
+        double num4 = sc.nextDouble();
+        double num5 = sc.nextDouble();
+
+        double average = (num1 + num2 + num3 + num4 + num5) / 5;
+
+        if (average >= 80) {
+            System.out.println("Grade: A");
+        } else if (average >= 60 && average < 80) {
+            System.out.println("Grade: B");
+        } else if (average >= 50 && average < 60) {
+            System.out.println("Grade: C");
+        } else if (average >= 45 && average < 50) {
+            System.out.println("Grade: D");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+-------------------------------------------------------
+9) Max of Three Numbers:
+import java.util.Scanner;
+
+public class MaxOfThreeNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter three numbers: ");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+
+        int max = num1;
+
+        if (num2 > max) {
+            max = num2;
+        }
+
+        if (num3 > max) {
+            max = num3;
+        }
+
+        System.out.println("Maximum: " + max);
+    }
+}
+--------------------------------------
+10) Salary Calculation:
+
+import java.util.Scanner;
+
+public class SalaryCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.print("Address: ");
+        String address = sc.nextLine();
+        System.out.print("Bank Details: ");
+        String bankDetails = sc.nextLine();
+
+        
+        System.out.print("Enter the number of holidays: ");
+        int holidays = sc.nextInt();
+
+       
+        double salary = 0;
+        String allotment;
+
+        if (holidays == 1) {
+            salary = 100; 
+            allotment = "Full Salary";
+        } else if (holidays >= 2 && holidays <= 5) {
+            salary = 95; // 5% deduction
+            allotment = "95%";
+        } else if (holidays >= 6 && holidays <= 14) {
+            salary = 90;
+            allotment = "90%";
+        } else if (holidays == 15) {
+            salary = 50; 
+            allotment = "50%";
+        } else {
+            allotment = "Not Applicable";
+        }
+
+        
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Bank Details: " + bankDetails);
+        System.out.println("Salary: $" + salary);
+        System.out.println("Allotment: " + allotment);
+        System.out.println("Holidays: " + holidays);
+    }
+}
+
+
+--------------------------------------
+11) Electric City Bill:
+
+import java.util.Scanner;
+
+public class ElectricCityBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter units consumed: ");
+        int units = sc.nextInt();
+
+        double amount = 0;
+        double discount = 0;
+
+        if (units > 0 && units <= 10) {
+            amount = units * 4;
+            discount = 10;
+        } else if (units > 10 && units <= 20) {
+            amount = units * 4;
+            discount = 15;
+        } else if (units > 20 && units <= 40) {
+            amount = units * 4;
+            discount = 30;
+        } else if (units > 40) {
+            amount = units * 4;
+            discount = 50;
+        }
+
+        double discountAmount = (amount * discount) / 100;
+        double totalAmount = amount - discountAmount;
+
+        System.out.print("Enter customer name: ");
+        String name = sc.next();
+
+        System.out.println("Name: " + name);
+        System.out.println("Units: " + units);
+        System.out.println("Amount: " + amount);
+        System.out.println("Discount: " + discount + "%");
+        System.out.println("Discount Amount: " + discountAmount);
+        System.out.println("Total Pay Amount: " + totalAmount);
+    }
+}
+--------------------------------------
+12) Retailer and Customer:
+
+import java.util.Scanner;
+
+public class RetailerCustomer {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. Retailer");
+        System.out.println("2. Customer");
+        System.out.print("Enter choice: ");
+        int choice = sc.nextInt();
+
+        if (choice == 1) {
+            
+            System.out.print("Enter retailer name: ");
+            String retailerName = sc.next();
+            System.out.print("Enter number of pieces: ");
+            int pieces = sc.nextInt();
+
+            double discount = 0;
+
+            if (pieces >= 1 && pieces <= 15) {
+                discount = 15;
+            } else if (pieces >= 16 && pieces <= 30) {
+                discount = 30;
+            } else if (pieces >= 31 && pieces <= 50) {
+                discount = 50;
+            }
+
+            System.out.println("Retailer Name: " + retailerName);
+            System.out.println("Pieces: " + pieces);
+            System.out.println("Discount: " + discount + "%");
+        } else if (choice == 2) {
+            // Customer
+            System.out.print("Enter customer name: ");
+            String customerName = sc.next();
+            System.out.print("Enter contact number: ");
+            long contactNumber = sc.nextLong();
+            System.out.print("Enter payment: ");
+            double payment = sc.nextDouble();
+
+            double discount = 0;
+
+            if (payment >= 1000 && payment <= 2000) {
+                discount = 10;
+            } else if (payment >= 100 && payment < 1000) {
+                discount = 5;
+            } else if (payment >= 2000 && payment <= 3000) {
+                discount = 15;
+            } else if (payment > 3000) {
+                discount = 30;
+            }
+
+            double discountAmount = (payment * discount) / 100;
+            double totalPayment = payment - discountAmount;
+
+            System.out.println("---------------------");
+            System.out.println("Customer Name: " + customerName);
+            System.out.println("Contact Number: " + contactNumber);
+            System.out.println("Payment: " + payment);
+            System.out.println("Discount: " + discount + "%");
+            System.out.println("Total Payment: " + totalPayment);
+        } else {
+            System.out.println("Invalid choice");
+        }
+    }
+}
+---------------------------------------------------------------
+
+ 
